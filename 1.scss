@@ -1,0 +1,289 @@
+$xanh-banner:#2c3e50;
+$xanh-banner-bottom:#f9fafb;
+$xanh-hover:#47c9af;
+$footer-top:#a1b1bc; //coloe text price -- and
+$footer-center:#1a1c27;
+$footer-bottom:#222533;
+// mau cho nen
+$color: white;
+$color-text-menu:#222533;
+$chumo:#a7b6c0;
+$color-text-name:#2c3e50;
+$color-star:#2c3e50;
+$color-text-address:#2c3e50;
+// mau chu
+$text: 'lato', sans-serif; //text banner bottom
+// font family
+$mintext:13px;
+$mediumtext:14px;
+$menutext:15px;
+// font size
+
+$widthcover: (1170/1920)*100%;
+$heighttop:50px; 
+// khai bao bien va ham dung chung 
+*{
+	width: 100%;
+	margin: 0; padding: 0;
+}
+.top{
+	width: 100%;
+	height:$heighttop;
+	background-color: $xanh-banner;
+	.banner-top{
+		width: $widthcover;
+		height: $heighttop;
+		margin: auto;
+		display: flex;
+		justify-content: space-between;
+		.bnt-left{
+			width: 200px;
+			
+			position: relative;
+			transition: 0.2s;
+			&:hover{
+				.languages{
+					opacity: 1;
+					visibility: visible;
+				}
+			}
+			b{
+				display: block;
+				height: $heighttop;
+				line-height: $heighttop;
+				color: $color;
+				font-family: $text;
+				font-size: $mediumtext;	
+				i{
+					color: $color;
+					display: inline-block;
+					width: 20px;
+					height: 20px;
+					margin-left: 20px; 
+					font-size: $mediumtext;
+				}			
+			}
+			.languages{
+				position: absolute;
+				top: 50px;	left: 0;
+				width: auto;
+				opacity: 0;
+				visibility: hidden;
+				transition: 0.2s;
+				ul{
+					list-style: none;
+					background-color: $xanh-banner;
+					li{
+						a{
+							text-decoration: none;
+							display: block;
+							width: auto;
+							padding: 10px;
+							font-size: $mintext;
+							font-family: $text;
+							color: $color;
+							line-height: 20px;
+							padding-right: 15px;
+						}
+					}
+					// end li
+				}
+				// end ul
+			}
+			// end b
+		}
+		// end bnt left
+		.bnt-right{
+			width: 350px;
+			height: $heighttop;
+			line-height: $heighttop;
+			display: flex;
+			justify-content: space-between;
+			.button{
+				width: 100px;
+				height: 30px;
+				margin: auto;
+				line-height: 30px;
+				text-align: center;
+				// border:1px solid black;
+				background-color: $footer-bottom;
+				a{
+					display: block;
+					width: 100px;
+					height: 30px;
+					line-height: 30px;
+					text-decoration: none;
+					font:{
+						size:$mintext;
+						family:$text;
+						weight:bold;
+					}
+					color: $color;
+					i{
+						display: inline-block;
+						width: auto;
+						margin-right: 5px;
+						font-size: $menutext; 
+						color: $xanh-hover;
+					}
+				}
+			}
+			// end button
+			.links{
+				padding-left: 15px;
+				height: 50px;
+				line-height: 50px;
+				ul{
+					list-style: none;
+					display: flex;
+					li{
+						i{
+							color: $color;
+							font-size: 18px;
+							&:hover{
+								color:$xanh-hover;								
+							}
+						}
+					}
+				}
+			}
+			// end links
+		}
+		// end bnt-right
+	}	
+	// end banner-top
+}
+// end top
+.cover-main-menu{
+	width: 100%;
+	height: 90px;
+	background-color: $color;
+	.main-menu{
+		width: $widthcover;
+		height: 100%;
+		margin: auto;
+		display: flex;
+		justify-content: space-between;
+		.logo{
+			width: 270px;
+			height: 90px;
+			// background-color: pink;
+			img{
+				width: 100%;
+			}
+		}
+		// end logo
+		.menu{
+			width: 870px;
+			float: right;
+			ul{
+				height: 90px;
+				line-height: 90px;
+				width: 100%;
+				list-style: none;
+				display: flex;
+				justify-content: space-between;
+				li{
+					width: auto;
+					a{
+						text-decoration: none;
+						display: block;
+						width: auto;
+						text-align: right;
+						// margin: auto;
+						// padding-left: 10px; 
+						// padding-right: 10px;
+						font-size: $menutext;
+						font-family: $text;
+						font-weight: bolder;
+						color: $color-text-menu;
+						transition: 0.4s;
+						&:hover{
+							line-height: 80px;
+						}
+					}
+				} 
+				// end li
+			}
+			// end ul
+		}
+		// end menu
+	}
+	// end main-menu
+}
+// end cover-main-menu
+.cover-bottom-menu{
+	width: 100%;
+	height: 120px;
+	background-image: -webkit-linear-gradient(top, $xanh-banner-bottom 0%, $color 100%);
+	.bottom-menu{
+		width: $widthcover;
+		height: 100%;
+		margin: auto;
+		display: flex;
+		justify-content: space-between;
+		.left{
+			height: 120px;
+			line-height: 120px;
+			width: auto;
+			color: $color-text-menu;
+			display: flex;
+			font:{
+				// size:30px;
+				family:$text;
+				// weight:nomal;
+			}
+			.text{
+				width: auto;
+				font-size: 30px;
+				margin-right: 20px;
+			}
+			.icon{
+				margin: auto;
+				font-size: 15px;
+				width: auto;
+				line-height: 15px;
+				height: 15px;
+				padding:5px;
+				background: $color;
+				border: 0.5px solid $xanh-banner;
+				border-radius: 5px;
+			}
+		}
+		// end left
+		.right{			
+			width: auto;
+			// float: right;
+			height: 120px;
+			line-height: 120px;
+			color: $chumo;
+			font:{
+				family:$text;
+				size:$mediumtext;
+			}
+			display: flex;
+			text-align: right;
+			p{
+				width: auto;
+				i{
+				height: 120px;
+				line-height: 120px;
+				width: auto;
+				margin-right: 20px;
+				margin-left: 20px;
+				}
+			}
+			// end p
+		}
+		// and right
+	}
+	// end bottom menu
+}
+// end cover-bottom-menu
+@import "1mobile";
+
+.slide{
+	width: 100%;
+	height: 260px;
+	margin: 0; padding: 0;
+}
