@@ -166,7 +166,7 @@ $heighttop:50px;
 		margin: auto;
 		display: flex;
 		justify-content: space-between;
-		i{
+		>i{
 			display: none;
 		}
 		.logo{
@@ -181,6 +181,8 @@ $heighttop:50px;
 		.menu{
 			width: 870px;
 			float: right;
+			visibility: visible;
+			opacity: 1;
 			ul{
 				height: 90px;
 				line-height: 90px;
@@ -206,9 +208,6 @@ $heighttop:50px;
 						// &:hover{
 						// 	line-height: 80px;
 						// }
-						i{
-							font-size: $menutext;
-						}
 					}
 				} 
 				// end li
