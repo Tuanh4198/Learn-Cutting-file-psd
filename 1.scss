@@ -23,6 +23,7 @@ $widthcover: (1170/1920)*100%;
 $heighttop:50px; 
 // khai bao bien va ham dung chung 
 *{
+	font-family: $text;
 	width: 100%;
 	margin: 0; padding: 0;
 }
@@ -69,6 +70,7 @@ $heighttop:50px;
 				width: auto;
 				opacity: 0;
 				visibility: hidden;
+			    z-index: 1;
 				transition: 0.2s;
 				ul{
 					list-style: none;
@@ -164,6 +166,9 @@ $heighttop:50px;
 		margin: auto;
 		display: flex;
 		justify-content: space-between;
+		i{
+			display: none;
+		}
 		.logo{
 			width: 270px;
 			height: 90px;
@@ -198,8 +203,11 @@ $heighttop:50px;
 						font-weight: bolder;
 						color: $color-text-menu;
 						transition: 0.4s;
-						&:hover{
-							line-height: 80px;
+						// &:hover{
+						// 	line-height: 80px;
+						// }
+						i{
+							font-size: $menutext;
 						}
 					}
 				} 
